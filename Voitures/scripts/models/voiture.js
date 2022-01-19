@@ -1,10 +1,33 @@
 export class Voiture {
-    constructor(couleur, roues = 4, portes = 3) {
+
+    #serialNumber;
+
+    constructor(couleur, roues = 4, portes = 3, sn = new Date()) {
+        this.#SerialNumber = sn;
         this.roues = roues
         this.couleur = couleur
         this.portes = portes
         this.position = { x: 0, y: 0 };
         this.direction = "nord"
+    }
+
+    //Propriété auto-calculé
+    get Orientation(){
+        return {
+            position : this.position,
+            direction : this.direction
+        };
+    }
+
+    //Assessor
+    get SerialNumber(){
+        return this.#serialNumber;
+    }
+
+    //Mutateur
+    set #SerialNumber(value){
+        if(!(value instanceof Date)) throw new TypeError('Doit être de type Date');
+        this.#serialNumber = value;
     }
 
     avancer() {

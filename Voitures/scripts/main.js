@@ -14,6 +14,10 @@ console.log(auto3.roues);
 auto3.roues = auto3.roues - 1;
 console.log(auto3.roues);
 auto3.avancer();
+//auto.#SerialNumber = new Date(1987,8,27);
+console.log(auto.SerialNumber)
+console.log(auto);
+console.log(auto.Orientation);
 
 // let nom = 'Samuel';
 
