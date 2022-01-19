@@ -31,6 +31,7 @@ export class Voiture {
     }
 
     avancer() {
+        this.#passerVitesse();
         switch (this.direction) {
             case 'nord':
                 this.position.x += 1;
@@ -48,5 +49,9 @@ export class Voiture {
                 break;
         }
         console.log(`J'avance! je suis en ${this.position.x} - ${this.position.y}`)
+    }
+
+    #passerVitesse(){
+        console.log('La voiture change de vitesse');
     }
 }
