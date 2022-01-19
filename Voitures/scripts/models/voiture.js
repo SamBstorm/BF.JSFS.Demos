@@ -3,7 +3,7 @@ export class Voiture {
     #serialNumber;
 
     constructor(couleur, roues = 4, portes = 3, sn = new Date()) {
-        this.#SerialNumber = sn;
+        this.SerialNumber = sn;
         this.roues = roues
         this.couleur = couleur
         this.portes = portes
@@ -25,7 +25,7 @@ export class Voiture {
     }
 
     //Mutateur
-    set #SerialNumber(value){
+    set SerialNumber(value){
         if(!(value instanceof Date)) throw new TypeError('Doit être de type Date');
         this.#serialNumber = value;
     }
