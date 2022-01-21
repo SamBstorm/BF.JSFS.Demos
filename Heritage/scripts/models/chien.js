@@ -1,9 +1,9 @@
-import { Animal } from "./animal.js";
+import { Mamifere } from "./mamifaire.js";
 
-export class Chien extends Animal{
+export class Chien extends Mamifere{
 
     constructor(couleur, typePoil, nbPatte, alim, genre){
-        super('Wouf wouf!','Canidé',nbPatte, alim, genre);
+        super('Wouf wouf!','Canidé',nbPatte, alim, genre, 6);
         this.poil = { couleur :couleur, type : typePoil};
     }
 
@@ -14,5 +14,9 @@ export class Chien extends Animal{
 
     vaChercher(){
         console.log('Où ça? Où ça!');
+    }
+
+    toString(){
+        return JSON.stringify(this);
     }
 }

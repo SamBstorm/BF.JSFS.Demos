@@ -1,9 +1,9 @@
-import { Animal } from "./animal.js";
+import { Mamifere } from "./mamifaire.js";
 
-export class Chat extends Animal{
+export class Chat extends Mamifere{
 
     constructor(couleur, nbPatte, alim, genre){
-        super('Miaou', 'Félidé', nbPatte, alim, genre)
+        super('Miaou', 'Félidé', nbPatte, alim, genre, 8)
         //this.cri = 'Miaou';
         this.pelage = couleur;
     }

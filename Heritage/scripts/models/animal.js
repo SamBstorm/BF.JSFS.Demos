@@ -11,4 +11,8 @@ export class Animal{
     regarder(){
         console.log('Je vois...');
     }
+
+    seReproduire(){
+        console.log('Je me reproduis...')
+    }
 }
