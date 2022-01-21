@@ -8,7 +8,7 @@ export class Chien extends Mamifere{
     }
 
     regarder(){
-        super.regarder();
+        super.regarder('toujours tout droit');
         console.log('... bien le jour, et en noir et blanc.');
     }
 

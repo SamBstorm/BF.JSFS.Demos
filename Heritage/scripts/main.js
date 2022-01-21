@@ -15,6 +15,11 @@ console.log(animal.toString());
 
 let chien = new Chien("Blanc", "Long",4,'carnacié','Femelle');
 chien.regarder();
+
+//Attention, on appelle le comportement de l'Animal, mais c'est bien le chien qui l'exécute!
+Animal.prototype.regarder.call(chien,'derrière')
+
+
 chien.vaChercher();
 chien.seReproduire();
 console.log(chien.poil);

@@ -8,8 +8,8 @@ export class Animal{
         this.genre = genre;
     }
 
-    regarder(){
-        console.log('Je vois...');
+    regarder(direction){
+        console.log(`Je regarde vers ${direction}...`);
     }
 
     seReproduire(){
