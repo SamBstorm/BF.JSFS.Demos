@@ -23,7 +23,7 @@ export class Message{
     
     subon(eventName, func){
         if(!this.#events.has(eventName)) throw new Error(`L'événement '${eventName}' n'existe pas...`);
-        let index = this.#events.get(eventName).indexOf( f => f === func);
+        let index = this.#events.get(eventName).indexOf(func);
         this.#events.get(eventName).splice(index,1);
         console.log(this.#events)
     }

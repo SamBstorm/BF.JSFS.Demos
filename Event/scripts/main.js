@@ -8,6 +8,6 @@ messagerie.ajoutMessage(message1);
 
 console.log(message1);
 
+message1.on('avoirReponse',function(){alert('NouveauMessage!');})
 
 message1.obtientReponse(new Message("Bonjour Sam","Formateur"));
-
